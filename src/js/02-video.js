@@ -10,11 +10,12 @@ player.on(
       'videoplayer-current-time',
       JSON.stringify(evt.seconds)
     )
-  }, 1000)
-    
+  }, 1000)  
+   
 );
 
 player
-  .setCurrentTime(localStorage.getItem('videoplayer-current-time'))
-  .then(function (seconds) {
-  })
+    .setCurrentTime(localStorage.getItem('videoplayer-current-time'))
+    .then(function (seconds) {
+    });
+
